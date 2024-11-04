@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 
 .custom-scrollbar::-webkit-scrollbar {
     height: 0.3rem; /* Change this to control the height (x-axis scrollbar) */

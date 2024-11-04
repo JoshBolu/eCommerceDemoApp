@@ -9,7 +9,7 @@ export default function Footer(){
             
             <div className="col-span-1">
                 <div className="flex justify-between">
-                    <img src="/src/img/logo.png" className="w-10 h-10" alt="Company Logo"/>
+                    <img src="/img/logo.png" className="w-10 h-10" alt="Company Logo"/>
                     <div className="flex justify-center gap-1 sm:hidden">
                         <i className="ri-facebook-circle-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
                         <i className="ri-twitter-x-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>

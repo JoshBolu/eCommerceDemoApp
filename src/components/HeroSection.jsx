@@ -42,7 +42,7 @@ export default function HeroSection(){
             </div>
 
             <div className="bg-cusLightBlue rounded-md flex-[4] relative flex">
-                <img className="items-center justify-center" src="../src/img/yellowJacket.png" alt="Yellow Fashion Jacket" />
+                <img className="items-center justify-center" src="/img/yellowJacket.png" alt="Yellow Fashion Jacket" />
                 <button className="absolute px-3 py-1 text-xs bg-white top-4 left-4 rounded-xl h-9">Best Seller</button>
                 <div className="absolute top-4 right-4">
                     <button className="bg-white rounded-full w-9 h-9"><i className="text-xl ri-arrow-left-s-line"></i></button>
