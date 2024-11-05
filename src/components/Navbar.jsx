@@ -39,7 +39,7 @@ export default function Navbar(){
                     <li className="py-3 border-2 rounded-3xl border-cusLightBlue hover:bg-cusLightBlue"><Link className="p-5" to="/Products">Products</Link></li>
                 </ul>
 
-                <img className="w-8 h-8" src="/img/logo.png" alt="e-commerce logo" />
+                <img className="w-8 h-8" src={`${import.meta.env.BASE_URL}img/logo.png`} alt="e-commerce logo" />
 
                 <ul className="flex items-center gap-4">
                     <li className="flex items-center justify-center rounded-full bg-cusYellow w-11 h-11"><Link to="/Checkout"><i className="text-xl text-black ri-shopping-cart-2-fill"></i></Link></li>

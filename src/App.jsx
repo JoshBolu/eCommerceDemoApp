@@ -25,7 +25,9 @@ function App(){
         <Route path="/Products" element={<Products />}/>
         <Route path="/SupportPage" element={<SupportPage />}/>
         <Route path="/ProductDetails" element={<ProductDetails />}/>
-        <Route path="/checkout" element={<Checkout />}/>        
+        <Route path="/checkout" element={<Checkout />}/>     
+        {/* Redirect any unknown route to the home page */}
+        <Route path="*" element={<Home homeCardProductsData = {homeCardProductsData}/>} />   
       </Routes>
     </div>
   )

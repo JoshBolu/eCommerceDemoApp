@@ -4,26 +4,26 @@ import FooterLinkCard from "./FooterLinkCard";
 
 export default function Footer(){
     return(
-        <footer className="container px-2 grid grid-cols-1 mx-auto mb-3 lg:grid-cols-3 lg:gap-2 lg:grid-rows-2 mt-28">
+        <footer className="container grid grid-cols-1 px-2 mx-auto mb-3 lg:grid-cols-3 lg:gap-2 lg:grid-rows-2 mt-28">
             
             
             <div className="col-span-1">
                 <div className="flex justify-between">
-                    <img src="/img/logo.png" className="w-10 h-10" alt="Company Logo"/>
+                    <img src={`${import.meta.env.BASE_URL}img/logo.png`} className="w-10 h-10" alt="Company Logo"/>
                     <div className="flex justify-center gap-1 sm:hidden">
-                        <i className="ri-facebook-circle-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
-                        <i className="ri-twitter-x-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
-                        <i className="ri-linkedin-box-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
+                        <i className="flex items-center justify-center text-xl text-white rounded-full ri-facebook-circle-fill bg-greyPriText w-9 h-9"></i>
+                        <i className="flex items-center justify-center text-xl text-white rounded-full ri-twitter-x-fill bg-greyPriText w-9 h-9"></i>
+                        <i className="flex items-center justify-center text-xl text-white rounded-full ri-linkedin-box-fill bg-greyPriText w-9 h-9"></i>
                     </div>
                 </div>
 
-                <form action="" className="flex justify-between w-full mt-8 lg:w-fit gap-2">
+                <form action="" className="flex justify-between w-full gap-2 mt-8 lg:w-fit">
                     <input type="text" placeholder="Enter Your Email" className="px-3 border bg-cusLightBlue rounded-2xl placeholder:text-sm placeholder:px-3 lg:h-12" />
                     <button className="flex items-center justify-center px-6 py-2 bg-cusYellow rounded-3xl lg:h-12">Subscribe</button>
                 </form>
             </div>
             
-            <div className="lg:grid grid-cols-4 hidden lg:col-span-2 ml-6">
+            <div className="hidden grid-cols-4 ml-6 lg:grid lg:col-span-2">
                 <FooterLinkCard />
                 <FooterLinkCard />
                 <FooterLinkCard />
@@ -42,9 +42,9 @@ export default function Footer(){
                     <a href="#">Privacy Policy</a>
                 </div>
                 <div className="justify-center hidden gap-3 sm:flex ">
-                    <i className="ri-facebook-circle-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
-                    <i className="ri-twitter-x-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
-                    <i className="ri-linkedin-box-fill bg-greyPriText text-white text-xl w-9 h-9 flex justify-center items-center rounded-full"></i>
+                    <i className="flex items-center justify-center text-xl text-white rounded-full ri-facebook-circle-fill bg-greyPriText w-9 h-9"></i>
+                    <i className="flex items-center justify-center text-xl text-white rounded-full ri-twitter-x-fill bg-greyPriText w-9 h-9"></i>
+                    <i className="flex items-center justify-center text-xl text-white rounded-full ri-linkedin-box-fill bg-greyPriText w-9 h-9"></i>
                 </div>
                 <p className="text-sm text-greybodyText">© 2024 Klothink. All rights reserved.</p>
             </div>
