@@ -18,7 +18,6 @@ function Home(props){
             <TestimonialsSection />
             <FaqSection />
             <SeamslessExpSection />
-            <Footer />
         </main>
     )
 }

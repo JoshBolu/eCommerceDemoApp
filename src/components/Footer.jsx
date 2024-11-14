@@ -2,6 +2,8 @@ import React from "react";
 
 import FooterLinkCard from "./FooterLinkCard";
 
+import footerLinks from "../data/footerLinks";
+
 export default function Footer(){
     return(
         <footer className="container grid grid-cols-1 px-2 mx-auto mb-3 lg:grid-cols-3 lg:gap-2 lg:grid-rows-2 mt-28">
@@ -24,10 +26,14 @@ export default function Footer(){
             </div>
             
             <div className="hidden grid-cols-4 ml-6 lg:grid lg:col-span-2">
-                <FooterLinkCard />
-                <FooterLinkCard />
-                <FooterLinkCard />
-                <FooterLinkCard />
+                {
+                    footerLinks.map(item => {
+                        return(
+                            <FooterLinkCard key={item.id} head={item.head} links={item.links} />
+                        )
+                    })
+                }
+                
             </div>
             
             <div className="flex justify-center gap-8 py-4 mt-8 border-y-2 text-greyPriText lg:hidden">

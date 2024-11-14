@@ -9,6 +9,7 @@ import SupportPage from "./pages/SupportPage"
 import ProductDetails from "./pages/ProductDetails"
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 //Data imports
 import homeCardData from "./data/homeCardData";
@@ -29,6 +30,7 @@ function App(){
         {/* Redirect any unknown route to the home page */}
         <Route path="*" element={<Home homeCardProductsData = {homeCardProductsData}/>} />   
       </Routes>
+      <Footer />
     </div>
   )
 }

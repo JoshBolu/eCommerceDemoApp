@@ -7,14 +7,23 @@
 
 
 .custom-scrollbar::-webkit-scrollbar {
-    height: 0.3rem; /* Change this to control the height (x-axis scrollbar) */
+  height: 0.3rem; /* Change this to control the height (x-axis scrollbar)*/
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-    background-color: #F7F7F8;
-    margin-top: 20px;
+  background-color: #F7F7F8;
+  margin-top: 20px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #1A1A1A;
-    border-radius: 5rem;
+  background-color: #1A1A1A;
+  border-radius: 5rem;
+}
+  
+@media (max-width: 640px) {
+  .tgrid > :nth-child(n+3) {
+    display: none;
+  }
+  .fourgrid > :nth-child(n+5) {
+    display: none;
+  }
 }
   

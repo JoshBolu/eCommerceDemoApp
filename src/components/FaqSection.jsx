@@ -49,7 +49,7 @@ export default function FaqSection(){
                 </ul>
             </div>
             
-            <div className="grid grid-cols-1 gap-2 mt-14 sm:grid-cols-2 lg:grid-cols-3 grid-rows-1">
+            <div className="grid grid-cols-1 gap-2 mt-14 sm:grid-cols-2 lg:grid-cols-3 grid-rows-1 fourgrid">
                 {faqCards}
             </div>
 

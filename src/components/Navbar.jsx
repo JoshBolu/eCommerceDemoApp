@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
-
+import {nanoid} from "nanoid"
 
 export default function Navbar(){
     
@@ -15,14 +15,17 @@ export default function Navbar(){
     
     const sideBarLinks = [
         {
+            id: nanoid(),
             name : "Home",
             link : "/Home"
         }, 
         {
+            id: nanoid(),
             name : "Products",
             link : "/Products"
         }, 
         {
+            id: nanoid(),
             name : "Support Page",
             link : "/SupportPage"
         }
@@ -53,7 +56,7 @@ export default function Navbar(){
                     {
                         sideBarLinks.map(item => {
                             return(
-                                <li onClick={toFalse} className="hover:text-greybodyText"><Link to={`${item.link}`}>{item.name}</Link>
+                                <li key={item.id} onClick={toFalse} className="hover:text-greybodyText"><Link to={`${item.link}`}>{item.name}</Link>
                             </li>)
                         })
                     }
