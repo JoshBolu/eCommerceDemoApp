@@ -84,7 +84,7 @@ export default function Products(){
             <section className="flex flex-col gap-2 px-2 sm:items-center md:flex-row sm:justify-between sm:gap-6">
                 <HeaderSubHeader flexPercent={5} header="Discover Now" subHeader="Products" text="Dive into a world of fashion innovation at Klothink. Our carefully curated collections bring together the latest trends and timeless classics, ensuring you find the perfect pieces for every occasion."/>
                 
-                <div className="grid grid-cols-2 gap-5 sm:flex p-4 sm:flex-[5] border rounded-2xl justify-between w-full">
+                <div className="grid grid-cols-2 gap-5 sm:flex p-4 sm:flex-[5] border rounded-2xl justify-between w-full mt-2 sm:mt-0">
                     {discoverNowData.map((items)=>{
                         return(
                             <div key={items.id}>
